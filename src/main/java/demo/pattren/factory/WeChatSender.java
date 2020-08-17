@@ -1,4 +1,4 @@
-package demo.factory;
+package demo.pattren.factory;
 
 /**
  * WeChat消息发送器

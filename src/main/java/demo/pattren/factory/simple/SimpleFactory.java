@@ -1,8 +1,8 @@
-package demo.factory.simple;
+package demo.pattren.factory.simple;
 
-import demo.factory.EmailSender;
-import demo.factory.PhoneSender;
-import demo.factory.Sender;
+import demo.pattren.factory.EmailSender;
+import demo.pattren.factory.PhoneSender;
+import demo.pattren.factory.Sender;
 
 /**
  * 简单工厂模式

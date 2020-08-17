@@ -1,6 +1,6 @@
-package demo.factory.simple;
+package demo.pattren.factory.simple;
 
-import demo.factory.Sender;
+import demo.pattren.factory.Sender;
 
 public class SimpleTest {
 

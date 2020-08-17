@@ -1,7 +1,7 @@
-package demo.factory.abstracts;
+package demo.pattren.factory.abstracts;
 
-import demo.factory.Sender;
-import demo.factory.WeChatSender;
+import demo.pattren.factory.Sender;
+import demo.pattren.factory.WeChatSender;
 
 /**
  * WeChat产品创建工厂

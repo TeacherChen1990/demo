@@ -1,4 +1,4 @@
-package demo.factory.statics;
+package demo.pattren.factory.statics;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

@@ -1,4 +1,4 @@
-package demo.factory;
+package demo.pattren.factory;
 
 /**
  * 邮件发送器

@@ -1,6 +1,6 @@
-package demo.factory.abstracts;
+package demo.pattren.factory.abstracts;
 
-import demo.factory.Sender;
+import demo.pattren.factory.Sender;
 
 public class AbstractTest {
     public static void main(String[] args) {

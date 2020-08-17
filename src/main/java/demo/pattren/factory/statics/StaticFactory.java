@@ -1,8 +1,8 @@
-package demo.factory.statics;
+package demo.pattren.factory.statics;
 
-import demo.factory.EmailSender;
-import demo.factory.PhoneSender;
-import demo.factory.Sender;
+import demo.pattren.factory.EmailSender;
+import demo.pattren.factory.PhoneSender;
+import demo.pattren.factory.Sender;
 
 /**
  * 静态方法工厂模式

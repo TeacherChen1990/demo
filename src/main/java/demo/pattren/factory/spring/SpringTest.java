@@ -1,4 +1,4 @@
-package demo.factory.spring;
+package demo.pattren.factory.spring;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

@@ -1,6 +1,6 @@
-package demo.factory.statics;
+package demo.pattren.factory.statics;
 
-import demo.factory.Sender;
+import demo.pattren.factory.Sender;
 
 public class StaticTest {
     public static void main(String[] args) {

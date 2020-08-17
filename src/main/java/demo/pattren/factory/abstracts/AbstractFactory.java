@@ -1,6 +1,6 @@
-package demo.factory.abstracts;
+package demo.pattren.factory.abstracts;
 
-import demo.factory.Sender;
+import demo.pattren.factory.Sender;
 
 /**
  * 抽象工厂模式， 抽象层父类，提供创建产品的抽象方法，具体创建类型由工厂实现层管理

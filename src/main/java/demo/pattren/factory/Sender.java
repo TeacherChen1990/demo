@@ -1,4 +1,4 @@
-package demo.factory;
+package demo.pattren.factory;
 
 /**
  * 具体产品
