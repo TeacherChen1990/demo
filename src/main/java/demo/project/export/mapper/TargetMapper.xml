@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="demo.project.export.mapper.TargetMapper" >
+    
+    <!--  单条记录插入插入  -->
+    <insert id="insert" parameterType="demo.project.export.entity.Target" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO target(source_name,source_age,source_addr,s_c1,s_c2,state,create_time,update_time)
+        VALUES
+            (
+            #{sourceName},
+            #{sourceAge},
+            #{sourceAddr},
+            #{sC1},
+            #{sC2},
+            #{state},
+            #{createTime},
+            #{updateTime}
+            )
+    </insert>
+    <!--  目标表批量插入  -->
+    <insert id="insertBatch" parameterType="demo.project.export.entity.Target">
+        INSERT INTO target(source_name,source_age,source_addr,s_c1,s_c2,state,create_time,update_time)
+        VALUES
+        <foreach collection ="list" item="item" separator =",">
+            (
+            #{item.sourceName},
+            #{item.sourceAge},
+            #{item.sourceAddr},
+            #{item.sC1},
+            #{item.sC2},
+            #{item.state},
+            #{item.createTime},
+            #{item.updateTime}
+            )
+        </foreach >
+    </insert>
+</mapper>
