@@ -17,7 +17,7 @@ public class ProjectManager {
         workers.put("架构",new Architect());
         workers.put("开发",new Development());
     }
-    public void dispatch(String job){
-        workers.get(job).doJob(job);
+    public void dispatch(Job job){
+        workers.get(job.getJobName()).doJob(job);
     }
 }
