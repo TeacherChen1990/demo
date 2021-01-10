@@ -1,12 +1,22 @@
 CREATE TABLE `emp` (
-  `id` bigint(11) NOT NULL AUTO_INCREMENT,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `age` int(11) DEFAULT NULL,
   `email` varchar(255) DEFAULT NULL,
   `user_name` varchar(255) DEFAULT NULL,
   `status` varchar(255) DEFAULT NULL,
   `sex` varchar(255) DEFAULT NULL,
   `salary` decimal(10,2) DEFAULT NULL,
+  `c1` varchar(255) DEFAULT NULL,
+  `c2` varchar(255) DEFAULT NULL,
+  `c3` varchar(255) DEFAULT NULL,
+  `c4` varchar(255) DEFAULT NULL,
+  `c5` varchar(255) DEFAULT NULL,
+  `c6` varchar(255) DEFAULT NULL,
+  `c7` varchar(255) DEFAULT NULL,
+  `c8` varchar(255) DEFAULT NULL,
+  `c9` varchar(255) DEFAULT NULL,
+  `c10` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `age` (`age`),
-  KEY `status` (`status`)
-) ENGINE=InnoDB AUTO_INCREMENT=50003206 DEFAULT CHARSET=utf8mb4;
+  KEY `salary` (`salary`)
+) ENGINE=InnoDB AUTO_INCREMENT=50000001 DEFAULT CHARSET=utf8mb4;

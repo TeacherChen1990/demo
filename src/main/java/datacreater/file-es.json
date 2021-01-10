@@ -1,0 +1,181 @@
+{
+  "job": {
+    "setting": {
+      "speed": {
+        "channel": 32
+      },
+      "errorLimit": {
+        "record": 0,
+        "percentage": 0.02
+      }
+    },
+    "content": [
+      {
+        "reader": {
+          "name": "txtfilereader",
+          "parameter": {
+            "path": [
+              "E://data1.txt"
+            ],
+            "encoding": "UTF-8",
+            "column": [
+              {
+                "index": 0,
+                "type": "Long"
+              },
+              {
+                "index": 1,
+                "type": "string"
+              },
+              {
+                "index": 2,
+                "type": "string"
+              },
+              {
+                "index": 3,
+                "type": "Long"
+              },
+              {
+                "index": 4,
+                "type": "string"
+              },
+              {
+                "index": 5,
+                "type": "double"
+              },
+              {
+                "index": 6,
+                "type": "string"
+              },
+              {
+                "index": 6,
+                "type": "string"
+              },
+              {
+                "index": 7,
+                "type": "string"
+              },
+              {
+                "index": 8,
+                "type": "string"
+              },
+              {
+                "index": 9,
+                "type": "string"
+              },
+              {
+                "index": 10,
+                "type": "string"
+              },
+              {
+                "index": 11,
+                "type": "string"
+              },
+              {
+                "index": 12,
+                "type": "string"
+              },
+              {
+                "index": 13,
+                "type": "string"
+              },
+              {
+                "index": 14,
+                "type": "string"
+              },
+              {
+                "index": 15,
+                "type": "string"
+              }
+            ],
+            "fieldDelimiter": "\t"
+          }
+        },
+        "writer": {
+          "name": "elasticsearchwriter",
+          "parameter": {
+            "endpoint": "http://127.0.0.1:9200",
+            "accessId": "1",
+            "accessKey": "1",
+            "index": "test-24",
+            "type": "_doc",
+            "cleanup": false,
+            "discovery": false,
+            "batchSize": 4096,
+            "splitter": ",",
+            "column": [
+              {
+                "name": "age",
+                "type": "integer"
+              },
+              {
+                "name": "email",
+                "type": "keyword"
+              },
+              {
+                "name": "name",
+                "type": "keyword"
+              },
+              {
+                "name": "state",
+                "type": "integer"
+              },
+              {
+                "name": "gender",
+                "type": "keyword"
+              },
+              {
+                "name": "salary",
+                "type": "double"
+              },
+              {
+                "name": "create_date",
+                "type": "date"
+              },
+              {
+                "name": "c1",
+                "type": "text"
+              },
+              {
+                "name": "c2",
+                "type": "text"
+              },
+              {
+                "name": "c3",
+                "type": "text"
+              },
+              {
+                "name": "c4",
+                "type": "text"
+              },
+              {
+                "name": "c5",
+                "type": "text"
+              },
+              {
+                "name": "c6",
+                "type": "text"
+              },
+              {
+                "name": "c7",
+                "type": "text"
+              },
+              {
+                "name": "c8",
+                "type": "text"
+              },
+              {
+                "name": "c9",
+                "type": "text"
+              },
+              {
+                "name": "c10",
+                "type": "text"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}
